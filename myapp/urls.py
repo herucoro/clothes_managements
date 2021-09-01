@@ -5,8 +5,8 @@ from rest_framework import routers, urlpatterns
 from .views import *
 
 router = routers.DefaultRouter()
-router.register(r'order', OrderViewSet)
-router.register(r'history', HistoryViewSet)
+router.register('order', OrderViewSet)
+router.register('history', HistoryViewSet)
 
 urlpatterns = [
     path('', include(router.urls)),    
